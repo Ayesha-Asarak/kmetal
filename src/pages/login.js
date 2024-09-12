@@ -60,7 +60,7 @@ function Login() {
       }
 
       try {
-        const response = await axios.post("http://localhost:8080/login", {
+        const response = await axios.post("http://localhost:8000/login", {
           name: username,
           password: password,
         });
@@ -74,22 +74,22 @@ function Login() {
           });
 
           // Assuming the backend decodes the token and sends back the role
-          const role = response.data.role;
+        //   const role = response.data.role;
 
-          console.log(response);
-          if (role === "user") {
-            navigate("/userprofileview");
-          } else if (role === "admin") {
-            navigate("/dashboard");
-          } else if (role === "supportAgent") {
-            navigate("/supportagent"); //////////////
-          } else {
-            console.error("Unknown role:", role);
-            alert("Unknown role. Please contact support.");
-          }
-        } else {
-          console.error("Login failed");
-          alert("Login failed");
+        //   console.log(response);
+        //   if (role === "user") {
+        //     navigate("/userprofileview");
+        //   } else if (role === "admin") {
+        //     navigate("/dashboard");
+        //   } else if (role === "supportAgent") {
+        //     navigate("/supportagent"); //////////////
+        //   } else {
+        //     console.error("Unknown role:", role);
+        //     alert("Unknown role. Please contact support.");
+        //   }
+        // } else {
+        //   console.error("Login failed");
+        //   alert("Login failed");
         }
       } catch (error) {
         console.error("Error submitting form:", error);

@@ -51,7 +51,7 @@ function Signin() {
 
     // Make a POST request to your FastAPI endpoint
     try {
-      const response = await axios.post("http://localhost:8080/signup", {
+      const response = await axios.post("http://localhost:8000/signup", {
         name: userName,
         email: email,
         password: password,
@@ -63,7 +63,7 @@ function Signin() {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:8080/google/login";
+    window.location.href = "http://localhost:8000/google/login";
   };
 
   return (
