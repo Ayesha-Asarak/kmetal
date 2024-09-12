@@ -115,7 +115,7 @@ function Login() {
             />
           </Grid>
         </Hidden>
-        <Grid item alignItems="center" lg={6} sx={{ paddingLeft: "12%" }}>
+        <Grid item alignItems="center" lg={6} sx={{ paddingLeft: "10%" }}>
           <Typography
             marginRight={10}
             color="#0D1B2A"

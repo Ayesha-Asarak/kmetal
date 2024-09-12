@@ -195,7 +195,7 @@ const ConfirmPasswordPage1 = () => {
             </Stack>
           </form>
           <Typography variant="body1" style={{ marginTop: '20px' }}>
-            <Link href="/login" style={{ color: '#0D1B2A', textDecoration: 'none' }}>
+            <Link href="/" style={{ color: '#0D1B2A', textDecoration: 'none' }}>
               Back to Login
             </Link>
           </Typography>
